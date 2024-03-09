@@ -1,0 +1,130 @@
+*,
+*::after
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: #0059b2;
+    text-decoration: none;
+}
+
+.page {
+
+    height: 100%;
+}
+
+
+.page__body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(210, 210, 210, 0.5);
+    height: 100%;
+    margin: 0;
+
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.container {
+   
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* ? HEADER */
+
+.page-header {
+    padding-top: 30px;
+    padding-bottom: 25px;
+
+    
+}
+
+.page-header__container {
+   display: flex; 
+   justify-content: space-between;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 3px solid rgba(210, 210, 210, 1);
+}
+
+.page-header__logo {
+    text-align: center;
+}
+
+.main-menu {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+/*    column-gap: 20px;*/
+
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.main-menu__item{       
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-menu__item:hover {
+    background-color: rgba(210, 210, 210, 1);
+    border-radius: 6px;
+
+}
+
+/*MAIN*/
+
+.content-list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.content-list__item {
+
+    background-color: white;
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page__footer {
+    margin-top: auto;
+    background-color: rgba(210, 210, 210, 1);
+    padding-bottom: 15px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;    
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    column-gap: 57px;
+}
