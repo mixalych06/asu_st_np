@@ -1,19 +1,19 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
-from utils.pars_content import parsing_path_doc, parsing_path_video
+from utils.pars_content import parsing_path_doc, parsing_path_video, parsing_path_manual
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def main_page():
-    return 'Hello'
+    return render_template('main.html', main_title='Главная страница')
 
 
 @app.route('/video')
 def video_page():
     contents = parsing_path_video()
-    print(contents)
+
     return render_template('video.html', video_title='Видео', contents=contents)
 
 
@@ -21,13 +21,14 @@ def video_page():
 @app.route('/mimo')
 def mimo_page():
     contents = parsing_path_doc()
-    print(contents)
+
     return render_template('docs.html', docs_title='Памятки', contents=contents)
 
 
 @app.route('/manual')
 def manual_page():
-    return 'Hello'
+    contents = parsing_path_manual()
+    return render_template('docs.html', docs_title='Инструкции', contents=contents)
 #
 #
 # @app.route('/author')

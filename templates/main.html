@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ main_title }}
+{% endblock %}
+
+{% block main %}
+<section class="page-main__title">
+        <div class="container">
+            <h1 class="page-main__title">{{ main_title }}</h1>
+        </div>
+</section>
+<section class="page-main__content main-content">
+    <div class="container">
+        <p class="container__paragraph">Сайт предназначен для быстрого и удобного доступа к обучающим материалам по внедрению и использованию.
+            АСУ СТ НП на полигоне Забайкальской железной дороги.</p>
+        <p class="container__paragraph">На странице <a href="/video">"Видео"</a> собраны обучающие видео.</p>
+        <p class="container__paragraph">На странице <a href="/mimo">"Памятки"</a> собраны обучающие материалы в печатном формате.</p>
+        <p class="container__paragraph">На странице <a href="/mimo">"Инструкции"</a> публикуются полные инструкции к системе или отдельным модулям.</p>
+
+
+    </div>
+</section>
+
+
+{% endblock %}

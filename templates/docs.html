@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}
+{{ docs_title }}
+{% endblock %}
+
 {% block main %}
 
 <section class="page-main__title">
@@ -9,10 +13,10 @@
     </section>
     <section class="page-main__content main-content">
         <div class="container">
-            <ul class="main-content__list content-list">
+            <ul class="main-content__list content-list content-list-doc">
             {% for item in contents %}  
                 <li class="content-list__item">
-                    <a class="content-list__link" href="{{ item }}">
+                    <a class="content-list__link" target="_blank" href="{{ item }}">
                     {{  item.split('/')[-1] }}
                     </a>
                 </li> 

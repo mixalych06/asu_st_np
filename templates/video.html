@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}
+{{ video_title }}
+{% endblock %}
+
 {% block main %}
 
 <section class="page-main__title">
@@ -12,10 +16,12 @@
             <ul class="main-content__list content-list">
                 {% for item in contents %}
                 <li class="content-list__item">
-                    <video src="{{ item }}" controls preload="none" width="300" poster="static/img/logo.png"></video>
+                    
+                    <video src="{{ item }}" controls preload="none" poster="static/img/logo.png"></video>
                     <a class="content-list__link" href="{{ item }}">
                     {{  item.split('/')[-1] }}
                     </a>
+                    
 
                 </li>
             {% endfor %}
