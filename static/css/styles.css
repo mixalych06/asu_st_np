@@ -211,7 +211,7 @@ h1{
     .page-header__container {
         flex-direction: column;
         font-weight: 600;
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .page-header__nav{
@@ -241,7 +241,7 @@ h1{
 
     .main-menu__link{
         font-weight: 300;
-        font-size: 18px;
+        font-size: 22px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
