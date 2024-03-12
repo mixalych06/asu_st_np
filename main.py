@@ -30,5 +30,5 @@ def manual_page():
     return render_template('docs.html', docs_title='Инструкции', contents=contents)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     app.run(debug=True)
