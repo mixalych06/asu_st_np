@@ -17,7 +17,6 @@ def video_page():
     return render_template('video.html', video_title='Видео', contents=contents)
 
 
-
 @app.route('/mimo')
 def mimo_page():
     contents = parsing_path_doc()
@@ -29,11 +28,7 @@ def mimo_page():
 def manual_page():
     contents = parsing_path_manual()
     return render_template('docs.html', docs_title='Инструкции', contents=contents)
-#
-#
-# @app.route('/author')
-# def main_page():
-#     return 'Hello'
 
 
-app.run(debug=True)
+if __name__ == 'main':
+    app.run(debug=True)

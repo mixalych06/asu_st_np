@@ -48,9 +48,11 @@ h1{
 
 /* HEADER */
 
-.page-header {
+.page-header {   
     padding-top: 30px;
     padding-bottom: 5px;
+    
+
 }
 
 .page-header__container {
