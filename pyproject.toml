@@ -6,7 +6,7 @@ authors = ["mixalych <mixalych06@mail.ru>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 flask = "^3.0.2"
 docx2pdf = "^0.1.8"
 
