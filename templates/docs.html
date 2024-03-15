@@ -17,7 +17,7 @@
             {% for item in contents %}  
                 <li class="content-list__item">
                     <a class="content-list__link" target="_blank" href="{{ item }}">
-                    {{  item.split('/')[-1] }}
+                    {{  item[:item.rfind('.')].split('/')[-1] }}
                     </a>
                 </li> 
             {% endfor %}

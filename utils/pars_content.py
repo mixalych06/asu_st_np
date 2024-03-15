@@ -1,7 +1,6 @@
 import os
 import glob
-
-path_doc = '../static/content/Памятки'
+import pprint
 
 
 def parsing_path_video():
@@ -13,6 +12,7 @@ def parsing_path_video():
 def parsing_path_doc():
     path_document = 'static/content/Памятки'
     rez = (glob.glob(path_document + '/*.pdf'))
+    pprint.pprint(rez)
     return sorted(rez)
 
 
