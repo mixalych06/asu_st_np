@@ -17,8 +17,8 @@
                 {% for item in contents %}
                 <li class="content-list__item">
                     
-                    <video src="{{ item }}" controls preload="none" poster="static/img/logo.png"></video>
-                    <a class="content-list__link" href="{{ item }}">
+
+                    <a class="content-list__link" href="{{ url_for('play', video_name=item) }}">
                     {{  item[:item.rfind('.')].split('/')[-1] }}
                     </a>
                     

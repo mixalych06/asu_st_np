@@ -9,6 +9,7 @@
 </head>
 <body class="page__body">
 <header class="page__header page-header">
+    {% block header %}
     <div class="container page-header__container">
         <a class="page-header__logo logo" href="{{ url_for('main_page') }}">
             Обучение <br>АСУ СТ НП
@@ -30,6 +31,7 @@
             </ul>
         </nav>
     </div>
+    {% endblock %}
 </header>
 <main class="page__main page-main">
     {% block main %}

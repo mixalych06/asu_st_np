@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 
 from utils.pars_content import parsing_path_doc, parsing_path_video, parsing_path_manual
 
@@ -15,6 +15,12 @@ def video_page():
     contents = parsing_path_video()
 
     return render_template('video.html', video_title='Видео', contents=contents)
+
+@app.route('/play')
+def play():
+    video_name = request.args.get('video_name', None)
+    print(video_name)
+    return render_template('video_play.html', video_title='Видео', video_name=video_name)
 
 
 @app.route('/mimo')
