@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ video_title }}
+{% endblock %}
+
+
+
+{% block main %}
+
+
+    <section class="page-main__content main-content">
+        <div class="container">
+            <ul class="main-content__list content-list">
+                <li class="content-list__item list-item ">
+
+                    <video class="list-item__video" src="{{ video_name }}" controls preload="none" poster="static/img/logo.png"></video>
+                    <h2>{{  video_name[:video_name.rfind('.')].split('/')[-1] }}</h2>
+
+                </li>
+
+            </ul>
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+{% endblock %}
+
+    
